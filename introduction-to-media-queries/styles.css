@@ -6,7 +6,7 @@
 body {
     background-color: #d8bfd8;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 20px;
 }
 
 div {
@@ -28,5 +28,40 @@ div {
 #div-4 {
     background-color: #f5deb3;
 }
-
 /*** Your code here ***/
+
+@media (min-width: 500px) {
+    div {
+        display: inline-block;
+        font-size: 30px;
+        width: 44%;
+    }
+
+    #div-2 {
+        background-color: #9370db;
+    }
+
+    #div-4 {
+        background-color: #6495ed;
+    }
+}
+
+@media (min-width: 900px) {
+    div {
+        display: inline-block;
+        font-size:40px;
+        width: 22%;
+        vertical-align: middle;
+    }
+
+    #div-3, #div-4 {
+        background-color: #9370db;
+    }
+}
+
+/* desktop anything above 1200px max */
+/* 400-800px mobile */
+/* best to keep at 3 break-points at most */
+
+
+@media (max-width: )
